@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Adivinum</title>
+  <link rel="stylesheet" type="text/css" href="css/adivina.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Adivina el número</h1>
+    <p>Estoy pensando en un número del 1 al 10. ¡Intenta adivinarlo!</p>
+  
+    <input type="number" id="guessInput" class="guess-input" placeholder="Ingresa tu número">
+    <p class="result-message" id="resultMessage"></p>
+    <div class="life-container">
+      <span class="life" id="life1"></span>
+      <span class="life" id="life2"></span>
+      <span class="life" id="life3"></span>
+      <span class="life" id="life4"></span>
+      <span class="life" id="life5"></span>
+    </div>
+    <p>Puntuación: <span id="score">0</span></p>
+<p>Mejor Puntuación: <span id="bestScore">0</span></p>
+<button onclick="checkGuess()">Adivinar</button>
+<button onclick="resetGame()">De nuevo</button>
+<p class="creator">Propiedad de Wilinton silva</p>
+  <script src="js\adivina.js"></script>
+</body>
+</html>
